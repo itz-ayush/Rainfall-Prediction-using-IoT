@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="img"></div>
+    <form class="form">
+            <legend>
+                Rainfall Predictor
+            </legend>
+            <h4>Temperature(Celcius)</h4>
+            <input type="text" class="temp" id="uitemp" class="floatLabel" name="Celcius" value="25">
+            <h4>Humidity</h4>
+            <input type="text" class="hum" id="uihum" class="floatLabel" name="humidity" value="85"><br><br>
+            <button class="submit" onclick="onClickedEstimateRainfall()" type="button">Estimate Rainfall</button>
+            <h4>For realtime data</h4>
+            <button class="submit" onclick="onClickedGetSensorData()" type="button">Real Time Data</button>
+            <h4>Estimated Rainfall</h4>
+            <div id="uiEstimatedRain" class="result"><h2></h2></div>
+    </form>
+</body>
+</html>
